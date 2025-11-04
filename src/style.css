@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-padel-bg-light text-padel-text;
+  }
+}
+
+@layer utilities {
+  .glow-teal {
+    box-shadow: 0 4px 20px rgba(20, 184, 166, 0.15);
+  }
+
+  .glow-teal-strong {
+    box-shadow: 0 8px 30px rgba(20, 184, 166, 0.25);
+  }
+
+  .text-shadow-teal {
+    text-shadow: 0 2px 10px rgba(20, 184, 166, 0.3);
+  }
+
+  .border-gradient {
+    border-image: linear-gradient(135deg, #14B8A6, #06B6D4) 1;
+  }
+}
